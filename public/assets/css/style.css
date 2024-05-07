@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15cm;
+    height: 10cm;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    /* Añadimos un espacio superior para el título */
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 20px;
+    /* Agrega un espacio entre la imagen y el botón */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+#returnButton {
+    font-size: 20px;
+    /* Ajusta el tamaño del texto */
+    padding: 15px 30px;
+    /* Ajusta el tamaño del botón */
+}

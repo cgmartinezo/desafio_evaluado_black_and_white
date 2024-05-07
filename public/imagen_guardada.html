@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Imagen Guardada</title>
+</head>
+
+<body style="background-color: black;">
+    <div class="content">
+        <h1 style="color: white;">Imagen Guardada</h1><img src="/assets/img/${path.basename(pathFile)}"
+            alt="Imagen Guardada">
+        <button id="returnButton">Volver a Ingresar otra Imagen</button>
+    </div>
+    <script> // Manejar el evento de clic en el botón para redirigir al usuario a la página principal
+
+        document.getElementById('returnButton').addEventListener('click', function () {
+            window.location.href = '/'; // Redirigir a la página principal
+        });
+    </script>
+</body>
+
+</html>
